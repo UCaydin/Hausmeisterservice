@@ -308,654 +308,804 @@ nav input {
 
 }
 
-.einleitungstext {
+.bttnnss {
   display: flex;
-  /* Flexbox für einfache Zentrierung */
-  justify-content: flex-start;
-  /* Horizontale Zentrierung */
-  align-items: center;
-  /* Vertikale Zentrierung */
-  width: 100%;
-  height: 80vh;
-  background-image: url(images/einleit.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 90vh;
-  padding: 0;
-  /* Entfernt unnötige Abstände */
-}
-
-.ee {
-  font-size: 70px;
-  padding: 1rem;
-  background-color: #2a2a2ad0;
-  /* Hintergrundfarbe nur um den Text */
-  display: inline-block;
-  /* Begrenzt den Hintergrund auf die Textbreite */
-  color: white;
-  /* Textfarbe für bessere Lesbarkeit */
-  text-align: center;
-  /* Zentriert den Text innerhalb des Blocks */
-  line-height: 1.2;
-  /* Passt den Zeilenabstand an */
-}
-
-@media (max-width: 768px) {
-
-  .einleitungstext {
-    height: 80vh;
-    justify-content: baseline;
-  }
-
-  .einleitungstext h1 {
-    width: 85%;
-    font-size: 30px;
-  }
-}
-
-.footer {
-  background-color: #242526;
-  color: white;
-  padding: 30px 20px;
-  text-align: left;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.footer-section {
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 20px;
-}
-
-.footer-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.footer-section p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: white;
-}
-
-.footer-section ul {
-  padding-left: 20px;
-  color: white;
-}
-
-.footer-section ul li {
-  list-style-type: circle;
-  color: white;
-}
-
-.footer-section a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #555;
-  margin-top: 20px;
-}
-
-.footer-bottom p {
-  font-size: 0.9rem;
-  color: white;
-  text-align: center;
-}
-
-.services-container {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  /* Abstand zwischen den Service-Reihen */
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.service-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  /* Abstand zwischen Bild und Text */
-
-  margin: 0 auto;
-}
-
-.service-row img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  /* Sicherstellen, dass das Bild gut skaliert */
-  border-radius: 10px;
-  /* Abgerundete Ecken für Bilder */
-}
-
-.service-info {
-  max-width: 500px;
-  text-align: left;
-}
-
-.service-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.service-info p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.service-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #242526;
-  /* Blau für den Button */
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.service-btn:hover {
-  background-color: #6d757c;
-  /* Dunkleres Blau beim Hover */
-}
-
-@media (max-width: 768px) {
-  .service-row {
-    flex-direction: column;
-    /* In Spalten umwandeln auf kleinen Bildschirmen */
-  }
-
-  .service-row.reverse {
-    flex-direction: column;
-    /* Gleiches Layout auch bei Reverse */
-  }
-
-  .service-row img {
-    width: 100%;
-    height: 300px;
-  }
-
-  .ww {
-    width: 80%;
-    align-self: center;
-    padding: 2rem;
-  }
-
-  .ee {
-    width: 80%;
-    align-self: center;
-    font-size: 25px;
-    padding: 1rem;
-  }
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
-
-.ss {
-  text-align: center;
-  font-size: 50px;
-  padding-top: 2rem;
-}
-
-
-/* Mobile- und Tablet-Ansicht: Eine Box pro Reihe */
-@media (max-width: 768px) {
-  .service {
-    width: 95%;
-    /* Jede Box nimmt 100% der Breite ein */
-    margin: 0 auto 20px;
-    /* Zentriert die Boxen auf kleinen Bildschirmen */
-  }
-
-  .einleitung h1 {
-    text-align: center;
-    font-size: 30px;
-    padding-top: 70px;
-  }
-
-  .service-container h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-
-  .einleitung p {
-    padding: 1rem;
-  }
-
-
-  .ss {
-    width: 100%;
-    font-size: 35px;
-  }
-}
-
-/* Große Bildschirme (z. B. ab 1024px): 3 Boxen nebeneinander */
-@media (min-width: 1024px) {
-  .service-container {
-    width: 80%;
-    /* Container nimmt 80% des Bildschirms ein */
-    margin: 0 auto;
-    /* Zentriert den Container auf dem Bildschirm */
-  }
-
-  .einleitung {
-    padding-top: 70px;
-    height: 300px;
-    padding-bottom: 50px;
-  }
-
-  .einleitung h1 {
-    padding-top: 70px;
-  }
-}
-
-/* Mobile Ansicht */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-
-  @media (min-width: 1024px) {
-    section {
-      padding: 30px;
-    }
-
-    p {
-      font-size: 1rem;
-      /* Größere Schrift auf großen Bildschirmen */
-    }
-
-  }
-}
-
-.content {
-  padding-top: 75px;
-  background-image: url(images/einleit.jpg);
-  color: #ffffff;
-}
-.content p {
-  background-color: #a0a0a0dd;
-  padding: 1rem;
-}
-
-.content h1 {
-  font-size: 50px;
-  padding-top: 2rem;
-  text-align: center;
-}
-
-.content23 h1 {
-  font-size: 50px;
-  padding-top: 2rem;
-  margin: 3rem;
-  text-align: center;
-}
-
-
-
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* Zentrierung des Textblocks */
-}
-
-.intro p {
-  width: 60%;
-  text-align: justify;
-  /* Blockartige Ausrichtung des Textes */
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin: 30px;
-  /* Optionale Seiteneinrückung für bessere Optik */
-}
-
-@media (max-width: 768px) {
-  .intro p {
-    width: 850%;
-  }
-}
-
-.image-container22 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
   gap: 30px;
 }
 
-.service-video {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  border-radius: 8px;
-  /* Optional, für abgerundete Ecken */
-}
-
-.fassadetext {
-  padding-top: 75px;
-
-}
-
-.fassadetext h1 {
-  font-size: 50px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
-}
-
-.fassadetext p {
-  width: 80%;
-  text-align: justify;
-  /* Blockartige Ausrichtung des Textes */
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin: 30px;
-  /* Optionale Seiteneinrückung für bessere Optik */
-}
-
-.intro1 {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  /* Streckt beide Elemente gleichmäßig */
-  text-align: left;
-  /* Text linksbündig */
-  margin: 0 auto;
-  gap: 40px;
-}
-
-.intro1 img {
-  height: 100%;
-  /* Passt die Höhe des Bildes an den Elterncontainer an */
-  max-height: 600px;
-  /* Begrenzung der maximalen Höhe */
-  object-fit: cover;
-  /* Verhindert Verzerrungen des Bildes */
-}
-
-.intro1 p {
-  margin: 0;
-  /* Entfernt unnötige Abstände */
-  flex: 1;
-  /* Textcontainer nimmt gleichen Platz ein wie das Bild */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* Zentriert den Text vertikal */
-}
-
-.angebot {
-  display: flex;
-  justify-content: center;
-  /* Zentrierung horizontal */
-  align-items: center;
-  /* Zentrierung vertikal */
-  text-align: center;
-  /* Text zentrieren */
-  margin: 3rem;
-}
-
-.angebotsec {
-  background-color: #67676761;
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-/* Stil für den Text */
-.angebotsec p {
-  font-family: Arial, sans-serif;
-  font-size: 1.2em;
-  line-height: 1.6;
-  margin: 0;
-  display: inline;
-
-}
-
-.angebotsec a {
-  color: #0078d7;
-  /* Linkfarbe */
+.service-btn22 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003d7a;
+  /* Blau für den Button */
+  color: #ffffff;
   text-decoration: none;
-}
-
-.angebotsec a:hover {
-  text-decoration: underline;
-}
-
-@media (min-width: 769px) and (max-width: 1680px) {
-  .fassadetext .intro1 {
-    flex-direction: column;
-    width: 95%;
-    /* Elemente untereinander anordnen */
-    align-items: center;
-    /* Zentriert das Bild und den Text */
-    text-align: center;
-    /* Text zentrieren */
-    margin: 0 auto;
-  }
-
-  .fassadetext img {
-    max-width: 100%;
-    align-items: center;
-    height: 600px;
-    /* Bild nimmt die volle Breite ein */
-  }
-
-  .fassadetext p {
-    width: 100%;
-    margin: 1rem;
-    /* Bild nimmt die volle Breite ein */
-  }
-
-  .fassadetext h1 {
-    font-size: 30px;
-    padding-top: 2rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .fassadetext .intro1 {
-    flex-direction: column;
-    width: 95%;
-    /* Elemente untereinander anordnen */
-    align-items: center;
-    /* Zentriert das Bild und den Text */
-    text-align: center;
-    /* Text zentrieren */
-    margin: 0 auto;
-  }
-
-  .fassadetext img {
-    max-width: 100%;
-    align-items: center;
-    height: 400px;
-    /* Bild nimmt die volle Breite ein */
-  }
-
-  .fassadetext p {
-    width: 100%;
-    margin: 1rem;
-    /* Bild nimmt die volle Breite ein */
-  }
-
-  .fassadetext h1 {
-    font-size: 30px;
-    padding-top: 2rem;
-    text-align: center;
-  }
-}
-
-
-.salam {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding-top: 180px;
-  background-image: url(images/einleit.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.wewe {
-  width: 60%;
-  margin: 2rem;
-  border-radius: 8px;
-}
-
-#contact {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 60%;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-#contact h1 {
-  font-size: 2.5rem;
-  color: #007bff;
-  margin-bottom: 20px;
-}
-
-#contact p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 25px;
-}
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#contact ul li {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  color: #444;
-}
-
-#contact ul li strong {
-  color: #007bff;
-}
-
-#contact ul li a {
-  text-decoration: none;
-  color: #000000;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ffffff;
+  /* Schwarzer Rahmen */
+  border-radius: 4px;
 }
 
-#contact ul li a:hover {
-  text-decoration: underline;
+.service-btn23 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  /* Weißer Hintergrund */
+  color: #000000;
+  /* Schwarze Schrift */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: 1px solid #000000;
+  /* Schwarzer Rahmen */
+  border-radius: 4px;
+  /* Optional: Abgerundete Ecken */
 }
 
-@media (max-width: 768px) {
+  .service-btn:hover {
+    background-color: #6d757c;
+    /* Dunkleres Blau beim Hover */
+  }
+
+  .einleitungstext {
+    display: flex;
+    /* Flexbox für einfache Zentrierung */
+    flex-direction: column;
+    justify-content: center;
+    /* Horizontale Zentrierung */
+    align-items: center;
+    /* Vertikale Zentrierung */
+    width: 100%;
+    background-image: url(images/einleit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    padding: 0;
+    /* Entfernt unnötige Abstände */
+  }
+
+  .eeww {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 90%;
+  }
+
+  .eeww h1 {
+    font-size: 70px;
+    padding: 1rem;
+    background-color: #2a2a2ad0;
+    /* Hintergrundfarbe nur um den Text */
+    display: block;
+    /* Begrenzt den Hintergrund auf die Textbreite */
+    color: white;
+    /* Textfarbe für bessere Lesbarkeit */
+    text-align: center;
+    /* Zentriert den Text innerhalb des Blocks */
+    line-height: 1.2;
+    /* Passt den Zeilenabstand an */
+  }
+
+  .callmee {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #003d7a;
+    color: #ffffff;
+    font-size: 22px;
+  }
+  .callmee a{
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .callmee a:hover{
+    color: #9a9a9a;
+  }
+
+  .eeww p {
+    font-size: x-large;
+    padding: 1rem;
+    background-color: #2a2a2ad0;
+    color: white;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .bttnnss {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      gap: 30px;
+    }
+
+    .callmee {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 390px) {
+
+    .callmee {
+      font-size: 10px;
+    }
+
+  }
+
+  @media (max-width: 929px) {
+
+    .eeww {
+      padding: 0;
+      margin: 0;
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      /* Kinder werden vertikal ausgerichtet */
+    }
+
+    .eeww h1 {
+      font-size: 30px;
+      text-align: center;
+      width: 100%;
+      /* Volle Breite des Containers */
+      background-color: #2a2a2ad0;
+      color: white;
+      box-sizing: border-box;
+      /* Padding wird innerhalb der Breite berücksichtigt */
+      word-wrap: normal;
+      /* Lange Wörter umbrechen */
+      overflow-wrap: normal;
+      /* Alternativ: Für kompatible Browser */
+      text-align: center;
+    }
+
+    .eeww p {
+      font-size: medium;
+      background-color: #2a2a2ad0;
+      color: white;
+      width: 100%;
+      box-sizing: border-box;
+      word-wrap: normal;
+      text-align: center;
+    }
+
+    .einleitungstext {
+      height: 90vh;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 390px) {
+
+    .eeww h1 {
+      font-size: 20px;
+      text-align: left;
+      align-self: flex-start;
+      width: 100%;
+      /* Volle Breite des Containers */
+      background-color: #2a2a2ad0;
+      color: white;
+      box-sizing: border-box;
+      /* Padding wird innerhalb der Breite berücksichtigt */
+      word-wrap: normal;
+      /* Lange Wörter umbrechen */
+      overflow-wrap: normal;
+      /* Alternativ: Für kompatible Browser */
+      text-align: center;
+    }
+
+    .eeww p {
+      font-size: 15px;
+    }
+
+  }
+
+  .footer {
+    background-color: #242526;
+    color: white;
+    padding: 30px 20px;
+    text-align: left;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+  }
+
+  .footer-section ul {
+    padding-left: 20px;
+    color: white;
+  }
+
+  .footer-section ul li {
+    list-style-type: circle;
+    color: white;
+  }
+
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    /* Abstand zwischen den Service-Reihen */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .service-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    /* Abstand zwischen Bild und Text */
+
+    margin: 0 auto;
+  }
+
+  .service-row img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    /* Sicherstellen, dass das Bild gut skaliert */
+    border-radius: 10px;
+    /* Abgerundete Ecken für Bilder */
+  }
+
+  .service-info {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .service-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .service-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .service-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #242526;
+    /* Blau für den Button */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .service-btn:hover {
+    background-color: #6d757c;
+    /* Dunkleres Blau beim Hover */
+  }
+
+  @media (max-width: 768px) {
+    .service-row {
+      flex-direction: column;
+      /* In Spalten umwandeln auf kleinen Bildschirmen */
+    }
+
+    .service-row.reverse {
+      flex-direction: column;
+      /* Gleiches Layout auch bei Reverse */
+    }
+
+    .service-row img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .ww {
+      width: 80%;
+      align-self: center;
+      padding: 2rem;
+    }
+
+    
+  }
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  .ss {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 2rem;
+  }
+
+
+  /* Mobile- und Tablet-Ansicht: Eine Box pro Reihe */
+  @media (max-width: 768px) {
+    .service {
+      width: 95%;
+      /* Jede Box nimmt 100% der Breite ein */
+      margin: 0 auto 20px;
+      /* Zentriert die Boxen auf kleinen Bildschirmen */
+    }
+
+    .einleitung h1 {
+      text-align: center;
+      font-size: 30px;
+      padding-top: 70px;
+    }
+
+    .service-container h2 {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .einleitung p {
+      padding: 1rem;
+    }
+
+
+    .ss {
+      width: 100%;
+      font-size: 35px;
+    }
+  }
+
+  /* Große Bildschirme (z. B. ab 1024px): 3 Boxen nebeneinander */
+  @media (min-width: 1024px) {
+    .service-container {
+      width: 80%;
+      /* Container nimmt 80% des Bildschirms ein */
+      margin: 0 auto;
+      /* Zentriert den Container auf dem Bildschirm */
+    }
+
+    .einleitung {
+      padding-top: 70px;
+      height: 300px;
+      padding-bottom: 50px;
+    }
+
+    .einleitung h1 {
+      padding-top: 70px;
+    }
+  }
+
+  /* Mobile Ansicht */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+
+    @media (min-width: 1024px) {
+      section {
+        padding: 30px;
+      }
+
+      p {
+        font-size: 1rem;
+        /* Größere Schrift auf großen Bildschirmen */
+      }
+
+    }
+  }
+
+  .content {
+    padding-top: 75px;
+    background-image: url(images/einleit.jpg);
+    color: #ffffff;
+  }
+
+  .content p {
+    background-color: #a0a0a0dd;
+    padding: 1rem;
+  }
+
+  .content h1 {
+    font-size: 50px;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .content23 h1 {
+    font-size: 50px;
+    padding-top: 2rem;
+    margin: 3rem;
+    text-align: center;
+  }
+
+
+
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Zentrierung des Textblocks */
+  }
+
+  .intro p {
+    width: 60%;
+    text-align: justify;
+    /* Blockartige Ausrichtung des Textes */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 30px;
+    /* Optionale Seiteneinrückung für bessere Optik */
+  }
+
+  @media (max-width: 768px) {
+    .intro p {
+      width: 850%;
+    }
+  }
+
+  .image-container22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .service-video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    /* Optional, für abgerundete Ecken */
+  }
+
+  .fassadetext {
+    padding-top: 75px;
+
+  }
+
+  .fassadetext h1 {
+    font-size: 50px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .fassadetext p {
+    width: 80%;
+    text-align: justify;
+    /* Blockartige Ausrichtung des Textes */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 30px;
+    /* Optionale Seiteneinrückung für bessere Optik */
+  }
+
+  .intro1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* Streckt beide Elemente gleichmäßig */
+    text-align: left;
+    /* Text linksbündig */
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .intro1 img {
+    height: 100%;
+    /* Passt die Höhe des Bildes an den Elterncontainer an */
+    max-height: 600px;
+    /* Begrenzung der maximalen Höhe */
+    object-fit: cover;
+    /* Verhindert Verzerrungen des Bildes */
+  }
+
+  .intro1 p {
+    margin: 0;
+    /* Entfernt unnötige Abstände */
+    flex: 1;
+    /* Textcontainer nimmt gleichen Platz ein wie das Bild */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Zentriert den Text vertikal */
+  }
+
+  .angebot {
+    display: flex;
+    justify-content: center;
+    /* Zentrierung horizontal */
+    align-items: center;
+    /* Zentrierung vertikal */
+    text-align: center;
+    /* Text zentrieren */
+    margin: 3rem;
+  }
+
+  .angebotsec {
+    background-color: #67676761;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  /* Stil für den Text */
+  .angebotsec p {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+    display: inline;
+
+  }
+
+  .angebotsec a {
+    color: #0078d7;
+    /* Linkfarbe */
+    text-decoration: none;
+  }
+
+  .angebotsec a:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 769px) and (max-width: 1680px) {
+    .fassadetext .intro1 {
+      flex-direction: column;
+      width: 95%;
+      /* Elemente untereinander anordnen */
+      align-items: center;
+      /* Zentriert das Bild und den Text */
+      text-align: center;
+      /* Text zentrieren */
+      margin: 0 auto;
+    }
+
+    .fassadetext img {
+      max-width: 100%;
+      align-items: center;
+      height: 600px;
+      /* Bild nimmt die volle Breite ein */
+    }
+
+    .fassadetext p {
+      width: 100%;
+      margin: 1rem;
+      /* Bild nimmt die volle Breite ein */
+    }
+
+    .fassadetext h1 {
+      font-size: 30px;
+      padding-top: 2rem;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .fassadetext .intro1 {
+      flex-direction: column;
+      width: 95%;
+      /* Elemente untereinander anordnen */
+      align-items: center;
+      /* Zentriert das Bild und den Text */
+      text-align: center;
+      /* Text zentrieren */
+      margin: 0 auto;
+    }
+
+    .fassadetext img {
+      max-width: 100%;
+      align-items: center;
+      height: 400px;
+      /* Bild nimmt die volle Breite ein */
+    }
+
+    .fassadetext p {
+      width: 100%;
+      margin: 1rem;
+      /* Bild nimmt die volle Breite ein */
+    }
+
+    .fassadetext h1 {
+      font-size: 30px;
+      padding-top: 2rem;
+      text-align: center;
+    }
+  }
+
+
+  .salam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 180px;
+    background-image: url(images/einleit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .wewe {
+    width: 60%;
+    margin: 2rem;
+    border-radius: 8px;
+  }
+
   #contact {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 85%;
+    padding: 30px;
+    width: 60%;
     text-align: center;
     margin-bottom: 1rem;
-    align-self: center;
-    padding: 0.5rem;
   }
 
-  .wewe {
-    width: 85%;
-    margin: 1rem;
-    border-radius: 8px;
+  #contact h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
   }
-}
 
-.galerie {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  #contact p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 25px;
+  }
 
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  #contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-.galerie .headding {
-  width: 50%;
-  padding-bottom: 30px;
-  padding-top: 80px;
-  margin: 2rem;
-}
+  #contact ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #444;
+  }
 
-.galerie .headding h1 {
-  font-size: 3em;
-  font-weight: bolder;
-}
+  #contact ul li strong {
+    color: #007bff;
+  }
 
-.galerie .boxx {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  #contact ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+  }
 
-}
+  #contact ul li a:hover {
+    text-decoration: underline;
+  }
 
-.galerie .boxx .dream {
-  display: flex;
-  flex-direction: column;
-  width: 32.5%;
-  align-items: center;
+  @media (max-width: 768px) {
+    #contact {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 85%;
+      text-align: center;
+      margin-bottom: 1rem;
+      align-self: center;
+      padding: 0.5rem;
+    }
 
-}
+    .wewe {
+      width: 85%;
+      margin: 1rem;
+      border-radius: 8px;
+    }
+  }
 
-.galerie .boxx .dream img {
-  width: 100%;
-  padding-bottom: 15px;
-  border-radius: 5px;
-
-}
-
-@media (max-width: 768px) {
-  .galerie .boxx {
+  .galerie {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .galerie .headding {
+    width: 50%;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    margin: 2rem;
+  }
+
+  .galerie .headding h1 {
+    font-size: 3em;
+    font-weight: bolder;
+  }
+
+  .galerie .boxx {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
   }
 
   .galerie .boxx .dream {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
     align-items: center;
-    justify-content: center;
-  }
-}
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
+  }
+
+  .galerie .boxx .dream img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+
+  }
+
+  @media (max-width: 768px) {
+    .galerie .boxx {
+      flex-direction: column;
+    }
+
+    .galerie .boxx .dream {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
